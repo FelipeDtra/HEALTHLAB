@@ -1,0 +1,91 @@
+.fab{
+    position: fixed;
+    bottom:60px;
+    right:20px;
+  }
+  
+  .fab button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #bb1417;
+    border: none;
+    box-shadow: 0 1px 5px rgba(0,0,0,.4);
+    font-size: 24px;
+    color: white;
+      
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .fab button.main{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #bb1417;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+  }
+  
+  .fab button.main:before{
+    /* content: '⏚'; */
+  }
+  
+  .fab ul{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding:0;
+    padding-right:5px;
+    margin:0;
+    list-style:none;
+    z-index:10;
+    
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: 1s ease-in;
+  }
+  
+  .fab ul li{
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: -10%;
+    opacity: 0;
+    
+    -webkit-transition: .7s ease-in;
+    -moz-transition: .7s ease-in;
+    transition: .8s ease-in;
+  }
+  
+  .fab button.main:active,
+  .fab button.main:focus{
+    outline: none;
+    background-color: #580001;
+    box-shadow: 0 3px 8px rgba(0,0,0,.5);
+   }
+   
+  .fab button.main:active:before,
+  .fab button.main:focus:before{
+    content: '';
+  }
+  
+  .fab button.main:active + ul,
+  .fab button.main:focus + ul{
+    bottom: 70px;
+  }
+  
+  .fab button.main:active + ul li,
+  .fab button.main:focus + ul li{
+    margin-bottom: 10px;
+    opacity: 1;
+  }
+  
+  .fab button.main:active + ul li:hover label,
+  .fab button.main:focus + ul li:hover label{
+    opacity: 1;
+  }

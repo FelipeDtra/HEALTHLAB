@@ -1,0 +1,283 @@
+<html>
+<head>
+<title id="title">Colaboradores</title>
+
+<link rel="stylesheet" type="text/css" href="../estilo-principal.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="../controller.js"></script>
+</head>
+<body onload="carregaMenu('menu.html');">
+
+    <div id="menu"></div>
+     
+    <div id="content_global">
+        <div id="content">
+          
+          <!-- INICIO DO CONTEUDO MANIPULADO -->
+          <form>
+            <div class="form-group col-md-6">
+              <label>Nome</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label>Data de Nascimento</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label for= "inputSexo">Sexo</label>
+              <select id="inputSexo" class="form-control">
+                <option selected> ... </option>
+                <option>Masculino</option>
+                <option>Feminino</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for= "inputEstadoCivil">Estado Civil</label>
+                <select id="inputEstadoCivil" class="form-control">
+                  <option selected> ... </option>
+                  <option>Solteiro</option>
+                  <option>Casado</option>
+                  <option>Divorciado</option>
+                  </select>
+            </div>
+
+            <div class="form-group col-md-2">
+              <label>RG</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Ôrgão Expedidor</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+               <label>UF</label>
+               <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>CPF</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Naturalidade</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>PIS/PASEP</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>CTPS</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Exped. CTPS</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Série CTPS</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>UF do CTPS</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputEmail">E-mail</label>
+                <input type="text" class="form-control" id="inputEmail">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputPhone">Telefone</label>
+                <input type="text" class="form-control" id="inputPhone">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputCEP">CEP</label>
+                <input type="text" class="form-control" id="inputCEP">
+            </div>
+
+            <div class="form-group col-md-4">
+              <label for="inputAddress">Endereço</label>
+              <input type="text" class="form-control" id="inputAddress">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="inputDistrict">Bairro</label>
+                <input type="text" class="form-control" id="inputDistrict">
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="inputCity">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+             </div>
+            </div>
+
+            <div class="form-group col-md-3">
+                <label for="inputEstado">Estado</label>
+                <select id="inputEstado" class="form-control">
+                  <option selected> ... </option>
+                  <option>MG</option>
+                  <option>SP</option>
+                  <option>RJ</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Nome da Mãe</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label>Nome do Pai</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            
+            <hr size = 10>
+            <br/> <br/>
+            <hr width = 100%>
+
+            <div class="form-group col-md-4">
+                <label>Nome da Empresa</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Código da Empresa</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Nome do Cargo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Código do Cargo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label>Matrícula</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-3">
+                <label>Código Interno</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for= "inputSituacao">Situação</label>
+                <select id="inputSituacao" class="form-control">
+                  <option selected> ... </option>
+                  <option>Admitido</option>
+                  <option>Rescindido</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Data de Admissão</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Data de Rescisão</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-5">
+                <label>Descrição da Contratação</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for= "inputEtnia">Etnia</label>
+                <select id="inputEtnia" class="form-control">
+                  <option selected> ... </option>
+                  <option>Branco</option>
+                  <option>Negro</option>
+                  <option>Pardo</option>
+                  <option>Indígena</option>
+                </select>
+            </div>
+
+            <div class="form-group col-md-1">
+                <label>PCD</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Tipo de PCD</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-4">
+                <label>Nome da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Código da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>CNPF da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Telefone da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>Cep da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-5">
+                <label>Endereço da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-5">
+                <label>Bairro da Filial</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label>UF</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+          </form>
+          <!-- FIM CONTEUDO MANIPULADO -->
+
+        </div>
+    </div>
+    
+    <!-- ATENÇÃO AO NOME DA TELA QUE IRÁ CHAMAR NO RODAPÉ -->
+    <div id="footer-form">
+        <div class="voltar-act" ><a onclick="location.href=getPath('cadastros/colaboradores-grid.html');">Voltar</a></div>
+        <div class="salvar-act" ><a onclick="location.href=getPath('cadastros/colaboradores-grid.html');">Salvar</a></div>
+    </div>
+     
+</body>
+</html>

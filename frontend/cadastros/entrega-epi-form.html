@@ -1,0 +1,82 @@
+<html>
+<head>
+<title id="title">Retiradas EPI</title>
+
+<link rel="stylesheet" type="text/css" href="../estilo-principal.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="../controller.js"></script>
+</head>
+<body onload="carregaMenu('menu.html');">
+
+    <div id="menu"></div>
+     
+    <div id="content_global">
+        <div id="content">
+          
+          <!-- INICIO DO CONTEUDO MANIPULADO -->
+          <form>
+            <div class="form-group col-md-12">
+              <label>Empresa</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Funcionário</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Função</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Data</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Tipo</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>Proteção auditiva</option>
+                <option>Proteção respiratória</option>
+                <option>Proteção visual e facial</option>
+                <option>Proteção da cabeça</option>
+                <option>Proteção de mãos e braços</option>
+                <option>Proteção de pernas e pés</option>
+              </select>
+            </div>
+
+            <div class="form-group col-md-6">
+              <label>Equipamento</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="exampleFormControlSelect1">Período de troca</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option>1h</option>
+                <option>Diário</option>
+                <option>Semanal</option>
+                <option>Mensal</option>
+                <option>Trimestral</option>
+                <option>Semestral</option>
+              </select>
+            </div>
+
+          </form>
+
+        </div>
+    </div>
+    
+    <!-- ATENÇÃO AO NOME DA TELA QUE IRÁ CHAMAR NO RODAPÉ -->
+    <div id="footer-form">
+        <div class="voltar-act" ><a onclick="location.href=getPath('cadastros/entrega-epi-grid.html');">Voltar</a></div>
+        <div class="salvar-act" ><a onclick="location.href=getPath('cadastros/entrega-epi-grid.html');">Salvar</a></div>
+    </div>
+     
+    <!-- FIM CONTEUDO MANIPULADO -->
+</body>
+</html>

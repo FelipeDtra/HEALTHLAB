@@ -1,0 +1,106 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <main>
+      <div class="container-login">
+          <div class="brand-wrapper">
+            <img src="logo-healthlab.png" alt="logo" class="logo">
+          </div>
+          <div class="login-wrapper my-auto">
+            <form method="get" action="file:///C:/www/HEALTHLAB/frontend/index.html">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" value="contato@unibh.br">
+              </div>
+              <div class="form-group mb-4">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" class="form-control" value="123456">
+              </div>
+              <input name="login" id="login" class="btn btn-block login-btn" type="button" value="Login" onclick="location.href='index.html';">
+            </form>
+            <a href="" data-toggle="modal" data-target="#esqueceuSenha" class="forgot-password-link">Esqueceu a senha?</a>
+
+            <!-- Modal esqueceu a senha-->
+            <div class="modal fade" id="esqueceuSenha" tabindex="-1" role="dialog" aria-labelledby="esqueceuSenhaLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="esqueceuSenhaLabel">Redefinir Senha</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Modal registre-se -->
+            <div class="modal fade" id="cadastrarUser" tabindex="-1" role="dialog" aria-labelledby="cadastrarUserLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="cadastrarUserLabel">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Nome:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label" data-mask="00/00/0000">CPF:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Email:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Senha:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Cadastrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="login-wrapper-footer-text">Não tem uma conta? <a href="#" href="" data-toggle="modal" data-target="#cadastrarUser" class="text-reset">Registre aqui</a></p>
+          </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#cpf').mask('000.000.000-00');
+    });
+</script>
+</body>
+</html>

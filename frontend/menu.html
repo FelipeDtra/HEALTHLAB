@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="estilo-principal.css" /> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+</head>
+<body>
+	<header>
+		<h4 id="titulo-header"></h4>
+		<div id="filtro-header">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+				<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+			</svg> -->
+			<!-- <form id="buscar">
+				<input type="search" placeholder="Search">
+			</form> -->
+		</div>
+	</header>
+
+	<input type="checkbox" id="chk" name="">
+	<label for="chk" class="menu-icon">&#9776;</label>
+
+	<!-- <div class="bg"></div> -->
+
+	<nav class="menu" id="principal">
+		<ul>
+			<li><a onclick="location.href=getPath('index.html');" class="voltar">Início</a></li>
+			<li><a href="#cadastros">Cadastros<span>+</span></a></li>
+			<li><a href="#gestao-cipa">Gestão de CIPA<span>+</span></a></li>
+			<li><a href="#controle-estoque">Estoque/Fornecimento de EPI<span>+</span></a></li>
+			<li><a href="#gestao-treinamentos">Gestão de Treinamentos Compulsórios<span>+</span></a></li>
+			<li><a onclick="location.href=getPath('login.html');">Sair<span></span></a></li>
+		</ul>
+	</nav>
+
+	<nav class="menu" id="cadastros">
+		<ul>
+			<li><a href="" class="voltar">Voltar</a></li>
+			<li><a onclick="location.href=getPath('cadastros/empresa-grid.html');">Empresa</a></li>
+			
+			<li><a onclick="location.href=getPath('cadastros/filial-grid.html');">Filial por Empresa</a></li>
+			<li><a onclick="location.href=getPath('cadastros/setor-grid.html');">Setor por Empresa</a></li>
+			<li><a onclick="location.href=getPath('cadastros/cargo-grid.html');">Cargo por Empresa</a></li>
+			<!-- <li><a onclick="location.href=getPath('cadastros/riscosocupacionais-grid.html');">Riscos Ocupacionais</a></li> -->
+			
+			<li><a onclick="location.href=getPath('cadastros/colaboradores-grid.html');">Colaboradores</a></li>
+			<li><a onclick="location.href=getPath('cadastros/absenteismo-grid.html');">Absenteísmo</a></li>
+			<li><a onclick="location.href=getPath('cadastros/vacina-grid.html');">Vacinas</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="menu" id="gestao-cipa">
+		<ul>
+			<li><a href="" class="voltar">Voltar</a></li>
+			<li><a onclick="location.href=getPath('cadastros/inscricao-cipa-form.html');">Inscrição de Candidato</a></li>
+			<li><a onclick="location.href=getPath('cadastros/calendario-reuniao-grid.html');">Calendário de Reuniões</a></li>
+			<li><a onclick="location.href=getPath('cadastros/controle-presenca-grid.html');">Controle de Presença</a></li>
+			<li><a onclick="location.href=getPath('cadastros/controle-treinamento-grid.html');">Controle de Treinamento</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="menu" id="controle-estoque">
+		<ul>
+			<li><a href="" class="voltar">Voltar</a></li>
+			<li><a onclick="location.href=getPath('cadastros/epi-grid.html');">Cadastro de EPI</a></li>
+			<li><a onclick="location.href=getPath('cadastros/entrega-epi-grid.html');">Registro de Entrega</a></li>
+		</ul>
+	</nav>
+	
+	<nav class="menu" id="gestao-treinamentos">
+		<ul>
+			<li><a href="" class="voltar">Voltar</a></li>
+			<li><a onclick="location.href=getPath('cadastros/funcoes-form.html');">Funções</a></li>
+			<li><a onclick="location.href=getPath('cadastros/controle-treinamento-func-grid.html');">Controle de Treinamento Compulsório</a></li>
+		</ul>
+	</nav>
+
+</body>
+</html>

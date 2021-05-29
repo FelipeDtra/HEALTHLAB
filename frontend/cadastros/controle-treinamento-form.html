@@ -1,0 +1,59 @@
+<html>
+<head>
+<title id="title">Controle de Treinamento</title>
+
+<link rel="stylesheet" type="text/css" href="../estilo-principal.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="../controller.js"></script>
+</head>
+<body onload="carregaMenu('menu.html');">
+
+    <div id="menu"></div>
+     
+    <div id="content_global">
+        <div id="content">
+          
+          <!-- INICIO DO CONTEUDO MANIPULADO -->
+          <form>
+            <div class="form-group col-md-12">
+              <label>Nome</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+            <div class="form-group col-md-6" style="float:left;">
+              <label>Data de Treinamento</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+            <div class="form-group col-md-6" style="float:left;">
+                <label for= "inputTreinamento">Status do treinamento</label>
+                <select id="inputTreinamento" class="form-control">
+                  <option>Pendente</option>
+                  <option>Concluído</option>
+                </select>
+            </div>
+    
+            <div class="card" style="width: 18rem; margin: 15px;">
+                <div class="card-body">
+                  <h5 class="card-title">Upload do certificado</h5>
+                  <p class="card-text">Insira o seu certificado de conclusão de treinamento.</p>
+                  <a href="#" class="btn btn-primary">Upload</a>
+                </div>
+            </div>
+
+          </form>
+
+        </div>
+    </div>
+    
+    <!-- ATENÇÃO AO NOME DA TELA QUE IRÁ CHAMAR NO RODAPÉ -->
+    <div id="footer-form">
+        <div class="voltar-act" ><a onclick="location.href=getPath('cadastros/controle-treinamento-grid.html');">Voltar</a></div>
+        <div class="salvar-act" ><a onclick="location.href=getPath('cadastros/controle-treinamento-grid.html');">Salvar</a></div>
+    </div>
+     
+    <!-- FIM CONTEUDO MANIPULADO -->
+</body>
+</html>

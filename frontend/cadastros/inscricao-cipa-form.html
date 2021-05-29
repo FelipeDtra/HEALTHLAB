@@ -1,0 +1,58 @@
+<html>
+<head>
+<title id="title">Inscrição CIPA</title>
+
+<link rel="stylesheet" type="text/css" href="../estilo-principal.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="../controller.js"></script>
+</head>
+<body onload="carregaMenu('menu.html');">
+
+    <div id="menu"></div>
+     
+    <div id="content_global">
+        <div id="content">
+          
+          <!-- INICIO DO CONTEUDO MANIPULADO -->
+          <form>
+            <div class="form-group col-md-12">
+                <label>Nome</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+            <div class="form-group col-md-6">
+                <label>CPF</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+            <div class="form-group col-md-6">
+                <label>Matrícula</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+            <div class="form-group col-md-6">
+                <label>E-mail</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+            <div class="form-group col-md-6">
+                <label>Telefone</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+    
+          </form>
+
+        </div>
+    </div>
+    
+    <!-- ATENÇÃO AO NOME DA TELA QUE IRÁ CHAMAR NO RODAPÉ -->
+    <div id="footer-form">
+        <div class="voltar-act" ><a onclick="location.href=getPath('index.html');">Voltar</a></div>
+        <div class="salvar-act" ><a onclick="CriaPDF('Formulario')">Salvar e Gerar Comprovante</a></div>
+    </div>
+     
+    <!-- FIM CONTEUDO MANIPULADO -->
+</body>
+</html>
